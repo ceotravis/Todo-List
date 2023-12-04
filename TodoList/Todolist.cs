@@ -29,13 +29,11 @@
 
             break;
         }
+    }
 
-        public void PrintTodos()
-        {
-            for (int i = 0; i < Todos.Count; i++)
-            {
-                Console.WriteLine("Task: " + Todos[i]);
-            }
+    public void PrintTodos() {
+        for (int i = 0; i < Todos.Count; i++) {
+            Console.WriteLine("Task: " + Todos[i]);
         }
     }
 

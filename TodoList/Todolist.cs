@@ -1,6 +1,7 @@
 ﻿class Todolist {
 
     List<string> Todos = new List<string>();
+    List<string> TodosDescription = new List<string>();
 
     public void AddTodo() {
         while(true) {
@@ -11,6 +12,16 @@
                 continue;
             }
             Todos.Add(Todo);
+
+            Console.WriteLine("Add a description:");
+
+            string TodoDescription = Console.ReadLine();
+            if (Todo == "" || Todo == null) {
+                Console.WriteLine("You need to add a description");
+                continue;
+            }
+            TodosDescription.Add(TodoDescription);
+
             break;
         }
     }

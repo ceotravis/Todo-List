@@ -20,7 +20,7 @@
             Console.WriteLine("Add a description:");
 
             string TodoDescription = Console.ReadLine();
-            if (Todo == "" || Todo == null)
+            if (TodoDescription == "" || TodoDescription == null)
             {
                 Console.WriteLine("You need to add a description");
                 continue;

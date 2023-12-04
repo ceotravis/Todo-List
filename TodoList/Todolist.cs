@@ -33,7 +33,20 @@
 
     public void PrintTodos() {
         for (int i = 0; i < Todos.Count; i++) {
-            Console.WriteLine("Task: " + Todos[i]);
+            Console.WriteLine("Task " + i + ": " + Todos[i]);
+        }
+    }
+
+    public void PrintTodoDescription() {
+        Console.WriteLine("What todo description would you like to see?");
+
+        if (Int32.TryParse(Console.ReadLine(), out int Todo)) {
+            Console.WriteLine($"Title: {Todos[Todo-1]}");
+            Console.WriteLine($"Description: {TodosDescription[Todo - 1]}");
+        } else if (Todo > Todos.Count) {
+            Console.WriteLine("A todo with that number does not exist");
+        } else {
+            Console.WriteLine("Parse error, please enter a valid number");
         }
     }
 

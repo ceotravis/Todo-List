@@ -3,5 +3,10 @@
         Todolist todolist = new Todolist();
 
         todolist.AddTodo();
+        todolist.AddTodo();
+
+        todolist.PrintTodos();
+
+        todolist.PrintTodoDescription();
     }
 }
